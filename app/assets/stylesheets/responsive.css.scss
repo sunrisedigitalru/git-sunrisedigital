@@ -19,8 +19,8 @@
 			background: image-url('header-sm.jpg');
 			width: 100%;
 			p {
-				font-size: 30px;
-				line-height: 36px;
+				font-size: 24px;
+				line-height: 30px;
 				color: #fff;
 			}
 			a {
@@ -31,7 +31,6 @@
 				font-size: 18px;
 			}
 		}
-		
 		
 		.navbar-default {
 			margin:0;
@@ -68,6 +67,22 @@
 				height: 3px;
 			}
 		}
+	}
+	
+	.process { 
+		a {
+			margin-top: 0; 
+			margin-bottom: 30px;
+		}
+		
+		h4 {
+			margin-top: 20px;
+			padding: 0 30px;
+		}
+	}
+	
+	.features p {
+		padding-bottom: 20px;
 	}
 	
 	h3.block_title {
