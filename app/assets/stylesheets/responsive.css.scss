@@ -1,4 +1,9 @@
 /* Responsove media queries */
+@media (min-width: 1200px) {
+	.header {
+		background: image-url('header-lg.jpg');
+	}
+}
 
 @media (max-width: 991px) {
 	.key_features, .systematic_approach, .process, .work_with_us {
