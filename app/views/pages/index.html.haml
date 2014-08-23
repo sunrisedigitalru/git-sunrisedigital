@@ -1,4 +1,52 @@
-.header
+.header-sm.visible-xs.visible-sm
+  .logo
+    .container
+      = image_tag "logo.png"
+      %h1
+        Digital
+        %br
+        Sunrise
+      %p
+        комплексный интернет маркетинг
+        %br
+        для успешных продаж
+  %nav.navbar.navbar-default{:role => "navigation"}
+    .container
+      / Brand and toggle get grouped for better mobile display
+      .navbar-header
+        %a.navbar-brand.pull-right.hidden-sm{href: "#"} +7 (800) 333-40-25
+        %button.navbar-toggle.pull-left{"data-target" => "#navbar-collapse", "data-toggle" => "collapse", :type => "button"}
+          %span.sr-only Toggle navigation
+          %span.icon-bar
+          %span.icon-bar
+          %span.icon-bar
+      / Collect the nav links, forms, and other content for toggling
+      #navbar-collapse.collapse.navbar-collapse
+        %a.navbar-brand.navbar-right.hidden-xs{href: "#"} +7 (800) 333-40-25
+        %ul.nav.navbar-nav
+          %li 
+            %a{:href => "#"} Услуги
+          %li 
+            %a{:href => "#"} Агентство
+          %li
+            %a{:href => "#"} Контакты
+          %li
+            %a{:href => "#"} Полезные статьи
+      / /.navbar-collapse
+    / /.container-fluid
+  .promo_block
+    .container
+      %p
+        Разрабатываем
+        %br
+        и реализуем комплексные
+        %br
+        рекламные кампании
+        %br
+        в интернете
+      %a.yellow_button
+        Познакомиться поближе
+.header.hidden-xs.hidden-sm
   .container
     .logo
       = image_tag "logo.png"
@@ -30,10 +78,10 @@
         Познакомиться поближе
 
 .key_features
+  %h3.block_title.visible-xs.visible-sm Максимальная отдача
   .container
-    %h3 Максимальную отдачу на вложенный бюджет нашим клиентам обеспечивают
-    %hr
-    
+    %h3.hidden-xs.hidden-sm Максимальную отдачу на вложенный бюджет нашим клиентам обеспечивают
+    %hr.hidden-xs.hidden-sm 
     .row.features
       .col-md-4
         .features__image_wrapper
@@ -60,7 +108,7 @@
         %br
         измеряем и прозрачен
 
-.media_plan
+.media_plan.hidden-xs.hidden-sm 
   .container
     .row
     .col-md-8
@@ -74,9 +122,10 @@
       .plan
       
 .systematic_approach
+  %h3.block_title.visible-xs.visible-sm Системный подход
   .container
-    %h3 Cистемный подход
-    %hr
+    %h3.hidden-xs.hidden-sm Cистемный подход
+    %hr.hidden-xs.hidden-sm 
     .row.features
       .col-md-4
         .features__image_wrapper
@@ -104,7 +153,8 @@
         %br
         измеряем и прозрачен
     .sales_funnel
-      = image_tag "sales_funnel.png"
+      = image_tag "sales_funnel.png", class: "hidden-xs hidden-sm"
+      = image_tag "sales_funnel_sm.png", class: "visible-xs visible-sm"
     .row.features
       .col-md-4
         .features__image_wrapper
@@ -131,9 +181,10 @@
         %br
         измеряем и прозрачен
 .process
+  %h3.block_title.visible-xs.visible-sm Прозрачный процесс
   .container
-    %h3 Понятный и прозрачный процесс
-    %hr
+    %h3.hidden-xs.hidden-sm  Понятный и прозрачный процесс
+    %hr.hidden-xs.hidden-sm 
     .row.features
       .col-md-2.col-md-offset-1
         .features__image_wrapper
@@ -180,22 +231,23 @@
         Познакомиться поближе
 
 .work_with_us
+  %h3.block_title.visible-xs.visible-sm  Работать с нами легко
   .container
-  %h3 Работать с нами легко и приятно
-  %hr
-  .row.features
-    .col-md-4
-      .features__image_wrapper
-        = image_tag "reports.png"
-      %h4 Полная отчетность
-    .col-md-4
-      .features__image_wrapper
-        = image_tag "clock.png"
-      %h4 Точность и пунктуальность
-    .col-md-4
-      .features__image_wrapper
-        = image_tag "in_touch.png"
-      %h4 Мы всегда на связи
+    %h3.hidden-xs.hidden-sm  Работать с нами легко и приятно
+    %hr.hidden-xs.hidden-sm 
+    .row.features
+      .col-md-4
+        .features__image_wrapper
+          = image_tag "reports.png"
+        %h4 Полная отчетность
+      .col-md-4
+        .features__image_wrapper
+          = image_tag "clock.png"
+        %h4 Точность и пунктуальность
+      .col-md-4
+        .features__image_wrapper
+          = image_tag "in_touch.png"
+        %h4 Мы всегда на связи
 
 .footer
   .container
@@ -211,7 +263,11 @@
             %li= image_tag "icon-linkedin.gif"
             %li= image_tag "icon-slideshare.gif"
             %li= image_tag "icon-vimeo.gif"
-      .col-md-6
+        %span.tagline.visible-xs.visible-sm 
+          Системный интернет-маркетинг 
+          %br.visible-xs
+          на B2B и B2C рынках
+      .col-md-6.hidden-xs.hidden-sm
         %nav.main_menu.pull-right
           %ul
             %li Услуги

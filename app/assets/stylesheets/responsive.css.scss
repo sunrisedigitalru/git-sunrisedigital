@@ -1,0 +1,120 @@
+/* Responsove media queries */
+
+@media (max-width: 991px) {
+	.key_features, .systematic_approach, .process, .work_with_us {
+		padding-bottom: 0;
+		.container{ display: none;}
+	}
+	
+	.header-sm {
+		.logo {	
+			background: #333;
+			padding: 40px 0;
+			img, h1 {display: inline-block; font-family: "PFDinDisplayPro-Bold"; font-size:42px; letter-spacing: 8px;}
+			h1 {margin: 0 0 0 10px; vertical-align: top; font-weight: 400; color: #fff; text-transform: uppercase;}
+			p {margin: 5px 0 0 95px; color: #fff;}
+		}
+		.promo_block {
+			padding: 40px 0;
+			background: image-url('header-sm.jpg');
+			width: 100%;
+			p {
+				font-size: 30px;
+				line-height: 36px;
+				color: #fff;
+			}
+			a {
+				margin-top: 20px;
+				width: 320px;
+				text-align: center;
+				padding: 20px 15px;
+				font-size: 18px;
+			}
+		}
+		
+		
+		.navbar-default {
+			margin:0;
+			background: #4d4d4d;
+			border: none;
+			border-bottom-left-radius: 0px;
+			border-bottom-right-radius: 0px;
+			border-top-left-radius: 0px;
+			border-top-right-radius: 0px;
+		}
+		.navbar-default a, .navbar-default li a {
+			color: #fff;
+			&:hover {
+				color: #eee;
+			}
+		}
+		.navbar-collapse {
+			padding: 0;
+			border-top:0;
+		}
+		.navbar-brand {
+			font-size: 16px;
+		}
+		.navbar-toggle {
+			border: none;
+			margin-left: 15px;
+			padding: 8px 0;
+			&:hover, &:focus, &:active {
+				background: none;
+			}
+			.icon-bar {
+				background-color: #fff;
+				width: 23px;
+				height: 3px;
+			}
+		}
+	}
+	
+	h3.block_title {
+		background: #4d4d4d;
+		color: #fff;
+		padding: 20px;
+		font-size: 20px;
+		font-weight: 300;
+		border-top: 3px solid #333;
+		margin: 0;
+		cursor: pointer;
+	}	
+}
+
+@media (max-width: 767px) {
+	.header-sm {
+		.navbar-collapse {
+			.navbar-nav {
+				margin:0;
+				li a {
+					text-align: center;
+					padding: 15px 15px; 
+					font-size: 16px; 
+					text-transform: uppercase;
+					border-top: 3px solid #333;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 480px) { 
+	.header-sm {
+		.promo_block {
+			a {width: 100%;}
+		}
+	}
+}
+@media (max-width: 320px) {
+	.header-sm {
+		.logo {
+			img {width: 60px; height: 60px;}
+			h1 {font-size: 36px; line-height: 36px;}
+			p {margin-left: 75px; font-size: 12px;}
+		}
+	}
+	.footer {
+		img {width: 34px;}
+	}
+}
