@@ -1,0 +1,76 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,700&subset=latin,cyrillic);
+
+body, html {
+	font-family: 'Ubuntu', Arial, sans-serif;
+	font-weight: 300;
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
+.yellow_button {
+	font-size: 14px;
+	font-weight: 400;
+	color: #000;
+	background: #ffca05;
+	display: inline-block;
+	padding: 10px 15px;
+	text-transform: uppercase;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	cursor: pointer;
+}
+
+.yellow_button:hover {
+	text-decoration: none;
+	color: #000;
+}
+
+.yellow_button:active {
+	background: #f0506f;
+	text-decoration: none;
+	color: #000;
+}
+
+.black_button {
+	font-size: 14px;
+	font-weight: 400;
+	color: #000;
+	background: none;
+	border: 1px solid #000;
+	display: inline-block;
+	padding: 10px 15px;
+	text-transform: uppercase;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	cursor: pointer;
+}
+
+.black_button:hover {
+	text-decoration: none;
+	color: #000;
+}
+
+.black_button:active {
+	background: #000;
+	text-decoration: none;
+	color: #fff;
+}

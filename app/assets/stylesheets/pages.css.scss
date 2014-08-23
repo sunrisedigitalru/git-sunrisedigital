@@ -1,0 +1,111 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.key_features, .systematic_approach, .process, .work_with_us {
+	padding-bottom: 40px;
+	
+	h3 {
+		text-transform: uppercase;
+		font-size: 20px;
+		text-align: center;
+		margin: 30px 0 0 0;
+		color: #333;
+	}
+	
+	hr {
+		background: #e6e6e6;
+		border: none;
+		height: 1px;
+		width: 635px;
+		text-align: center;
+		margin-top: 15px;
+	}
+	
+	.features {
+		text-align: center;
+		margin-top: 60px;
+		
+		
+		.features__image_wrapper {
+			height: 125px;
+			margin-bottom: 20px;
+		}
+		
+		h4 {
+			font-size: 20px;
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.key_features {
+	.features {
+		div.col-md-4:first-child .features__image_wrapper {
+			img {margin-left: 15px;}
+		}
+	}
+}
+
+.media_plan {
+	box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.7);
+	-moz-box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.7);
+	-webkit-box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.7);
+	
+	background: #ffca05;
+	height: 282px;
+	
+	span {
+		display: block;
+		margin-top: 60px;
+		font-size: 18px;
+		color: #000;
+	}
+	
+	a {
+		margin-top: 80px;
+	}
+	
+	.plan {
+		background: image-url("plan.png");
+		width: 282px;
+		height: 302px;
+		position:relative;
+		margin-top: -20px;
+	}
+}
+
+.systematic_approach {
+	text-align: center;
+	
+	hr {width: 140px;}
+	.features {
+		.features__image_wrapper {
+			height: 90px;
+		}
+		h4 {font-size: 16px;}
+	}
+	
+	.sales_funnel {
+		margin: 80px 0 80px 0;
+	}
+}
+
+.process {
+	color: #fff;
+	background: #333;
+	text-align: center;
+	h3 {color: #fff; font-weight: 300;}
+	hr {background: #fff; width: 210px;}
+	.features {
+		.features__image_wrapper {
+			height: 90px;
+		}
+		h4 {font-size: 16px;}
+	}
+	a {margin-top: 40px; width: 275px;}
+}
+
+.work_with_us {
+	hr {width: 235px;}
+}
