@@ -12,28 +12,31 @@
 	}
 	
 	.header-sm {
+		
+		.main_menu-sm {
+			display:none;
+		}
+		
 		.logo {	
 			background: #333;
 			padding: 40px 0;
-			img, h1 {display: inline-block; font-family: "PFDinDisplayPro-Bold"; font-size:42px; letter-spacing: 8px;}
-			h1 {margin: 0 0 0 10px; vertical-align: top; font-weight: 400; color: #fff; text-transform: uppercase;}
-			p {margin: 5px 0 0 95px; color: #fff;}
+			h2 {text-indent: -9999px; display:none;}
+			p {margin: 15px 0 0 102px; color: #fff;}
 		}
 		.promo_block {
 			padding: 40px 0;
 			background: image-url('header-sm.jpg');
 			width: 100%;
-			p {
+			h1 {
 				font-size: 24px;
 				line-height: 30px;
+				font-weight: 300;
 				color: #fff;
 			}
 			a {
-				margin-top: 20px;
 				width: 320px;
 				text-align: center;
-				padding: 20px 15px;
-				font-size: 18px;
+				padding: 13px 15px;
 			}
 		}
 		
@@ -86,6 +89,15 @@
 		}
 	}
 	
+	.work_with_us {
+		a {
+			width: 320px;
+			text-align: center;
+			padding: 13px 15px;
+			margin: 0 auto 20px auto;
+		}
+	}
+	
 	.features p {
 		padding-bottom: 20px;
 	}
@@ -117,6 +129,18 @@
 			}
 		}
 	}
+	#form-modal {
+		.modal-content {
+			form {
+				text-align: center;
+				input[type="submit"] {
+					height: 36px;
+					position: relative;
+					top: -1px;
+				}
+			}
+		}
+	}
 }
 
 @media (max-width: 480px) { 
@@ -125,11 +149,30 @@
 			a {width: 100%;}
 		}
 	}
+	.work_with_us {
+		a {
+			width: 100%;
+			margin-bottom: 20px;
+		}
+	}
+	#form-modal {
+		.modal-content {
+			form {
+				text-align: center;
+				input[type="submit"] {
+					height: 46px;
+					position: relative;
+					top: 0px;
+				}
+				input[type="text"], input[type="tel"], input[type="submit"] {width: 100%;}
+			}
+		}
+	}
 }
 @media (max-width: 320px) {
 	.header-sm {
 		.logo {
-			img {width: 60px; height: 60px;}
+			img {height: 60px;}
 			h1 {font-size: 36px; line-height: 36px;}
 			p {margin-left: 75px; font-size: 12px;}
 		}
