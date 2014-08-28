@@ -24,10 +24,6 @@ body, html {
 	overflow-x: hidden;
 }
 
-#clbh_div {
-	display: none;
-}
-
 .flash_message {
 	position: fixed;
 	z-index: 9999;
