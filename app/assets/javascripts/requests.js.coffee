@@ -3,7 +3,7 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 jQuery ->
-  validate_url = '/pages/validate'
+  validate_url = '/requests/validate'
   $('#new_request').validate(
     rules:
       'request[name]':
