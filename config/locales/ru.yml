@@ -1,4 +1,7 @@
 ru:
+  order_notifier:
+    received:
+      subject: "Заявка с сайта DigitalSunrise"
   activerecord:
     attributes:
       request:

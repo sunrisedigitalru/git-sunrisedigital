@@ -8,7 +8,7 @@ class RequestNotifier < ActionMailer::Base
   #
   def received(message)
     @message = message
-    mail to: 'info@digitalsunrise.ru', subject: "Заявка с сайта DigitalSunrise"
+    mail to: 'info@digitalsunrise.ru, ceo@digitalsunrise.ru'
   end
   
 end

@@ -34,7 +34,7 @@ class Request
   end
   
   def model_name
-    self.class.name.demodulize.underscore.to_sym
+    self.class.name.underscore.to_sym
   end
 
 end
