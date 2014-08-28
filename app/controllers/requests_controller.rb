@@ -6,7 +6,7 @@ class RequestsController < ApplicationController
     flash[:success] = "Ваша заявка принята. Менеджер свяжется с вами в ближайшее время!"
     
     respond_to do |format|
-      format.html { redirect_to root_url }
+      format.html { redirect_to root_url(form_submit: "true") }
       format.js
     end
   end
