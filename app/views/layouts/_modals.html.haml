@@ -1,0 +1,25 @@
+#form-modal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-dialog
+    .modal-content
+      .modal-header
+        %button.close{"data-dismiss" => "modal", :type => "button"}
+          %span{"aria-hidden" => "true"}
+            = image_tag "close.png"
+          %span.sr-only Закрыть
+        %h4#myModalLabel.modal-title Заполните форму для связи с нами
+      .modal-body
+        .row
+          .col-md-5.col-md-offset-1.col-sm-5.col-sm-offset-1
+            %p
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam...
+          .col-md-5.col-sm-5
+            = form_for @request, :validate => true, url: requests_submit_form_path, method: "get", remote: true do |f|
+              = f.text_field :name, placeholder: "Ваше имя"
+              = f.phone_field :phone, placeholder: "Телефон"
+              = f.text_field :email, placeholder: "E-mail"
+              = f.submit "Отправить"
+            %p
+              = image_tag "secure.png"
+              %span Мы не передаем данные третьим лицам
+      .modal-footer
+  

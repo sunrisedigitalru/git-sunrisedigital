@@ -12,5 +12,15 @@
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
   %body
+    .flash_message
+      = render 'layouts/flash_messages'
+    
+    = render 'layouts/header'
+    
     = yield
-    = render "layouts/scripts"
+    
+    = render 'layouts/footer'
+    
+    = render 'layouts/modals'
+    
+    = render 'layouts/scripts'

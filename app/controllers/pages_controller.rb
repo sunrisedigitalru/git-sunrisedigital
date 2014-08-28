@@ -1,8 +1,7 @@
 class PagesController < ApplicationController
-  def index
-  end
   
-  def submit_form
+  def index
+    @request = Request.new
   end
   
 end

@@ -24,6 +24,17 @@ body, html {
 	overflow-x: hidden;
 }
 
+#clbh_div {
+	display: none;
+}
+
+.flash_message {
+	position: fixed;
+	z-index: 9999;
+	width: 100%;
+}
+
+/* Buttons */
 .yellow_button {
 	font-size: 14px;
 	font-weight: 400;

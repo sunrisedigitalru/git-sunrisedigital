@@ -14,8 +14,10 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap-sprockets
+//= require jquery.validate
+//= require jquery.validate.additional-methods
+//= require jquery.validate.localization/messages_ru
 //= require_tree .
-
 
 $(document).ready(function() {
 	$('.block_title').click(function() {

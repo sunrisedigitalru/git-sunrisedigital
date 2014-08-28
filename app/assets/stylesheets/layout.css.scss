@@ -97,8 +97,14 @@
 				&:first-child {
 					margin-left: 0;
 				}
-				img {
+				a {
+					width: 45px;
+					height: 46px;
+					display: block;
+					background: image-url("social-icons.png");
 					border-radius: 1px;
+					&.fb {background-position: 0 0;}
+					&.fb:hover {background-position: -44px 0;}
 				}
 			}
 		}

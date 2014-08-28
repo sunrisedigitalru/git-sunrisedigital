@@ -1,0 +1,25 @@
+ru:
+  activerecord:
+    attributes:
+      request:
+        type: "Тип"
+        name: "Имя"
+        phone: "Телефон"
+        email: "Email"
+        utm_source: "UTM_SOURCE"
+        utm_campaign: "UTM_CAMPAIGN"
+        utm_term: "UTM_TERM"
+        utm_medium: "UTM_MEDIUM"
+        utm_content: "UTM_CONTENT"
+        
+    errors:
+      models:
+        request:
+          attributes:
+            name:
+              blank: "необходимо ввести"
+            phone:
+              blank: "обязателен"
+              invalid: "имеет странный формат"
+            email:
+              invalid: "имеет странный формат"

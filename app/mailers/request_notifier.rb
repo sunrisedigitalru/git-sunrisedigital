@@ -6,11 +6,8 @@ class RequestNotifier < ActionMailer::Base
   #
   #   en.order_notifier.received.subject
   #
-  def received(request,file,path)
-    @message = request
-    if file
-    	attachments["#{file}"] = File.read(path)
-    end
+  def received(message)
+    @message = message
     mail to: 'info@digitalsunrise.ru', subject: "Заявка с сайта DigitalSunrise"
   end
   
