@@ -24,6 +24,10 @@ body, html {
 	overflow-x: hidden;
 }
 
+body.modal-open {
+    padding-right: 0px !important;
+}
+
 .flash_message {
 	position: fixed;
 	z-index: 9999;

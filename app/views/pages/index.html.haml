@@ -1,3 +1,86 @@
+.header-sm.visible-xs.visible-sm
+  .logo
+    .container
+      = image_tag "logo.png"
+      %h2{ itemprop: "name"}
+        Digital Sunrise
+      %p
+        комплексный интернет маркетинг
+        %br
+        для успешных продаж
+  %nav.navbar.navbar-default.main_menu-sm{:role => "navigation"}
+    .container
+      / Brand and toggle get grouped for better mobile display
+      .navbar-header
+        %a.navbar-brand.pull-right.hidden-sm{href: "tel:+7 (800) 333-40-25"} +7 (342) 202-04-97
+        %button.navbar-toggle.pull-left{"data-target" => "#navbar-collapse", "data-toggle" => "collapse", :type => "button"}
+          %span.sr-only Toggle navigation
+          %span.icon-bar
+          %span.icon-bar
+          %span.icon-bar
+      / Collect the nav links, forms, and other content for toggling
+      #navbar-collapse.collapse.navbar-collapse
+        %a.navbar-brand.navbar-right.hidden-xs{href: "tel:+7 (800) 333-40-25"} +7 (342) 202-04-97
+        %ul.nav.navbar-nav
+          %li 
+            %a{:href => "#"} Услуги
+          %li 
+            %a{:href => "#"} Агентство
+          %li
+            %a{:href => "#"} Контакты
+          %li
+            %a{:href => "#"} Полезные статьи
+      / /.navbar-collapse
+    / /.container-fluid
+  .promo_block
+    .container
+      %h1
+        Гарантированное
+        %br.visible-xs
+        увеличение продаж
+        %br.visible-sm.visible-xs
+        с помощью комплексного интернет-маркетинга.
+        %br.visible-sm.visible-xs
+        Увеличим прибыль
+        %br.visible-xs
+        за 28 или 365 дней
+        %br.visible-xs.visible-sm
+        без увеличения бюджета
+        %br.visible-xs
+        на трафик.
+      %a.yellow_button{"data-target" => "#form-more", "data-toggle" => "modal", onclick: "yaCounter25983529.reachGoal('clickmore');"}
+        Узнать подробнее
+.header.hidden-xs.hidden-sm
+  .container
+    .logo
+      = image_tag "logo.png"
+      %h2{ itemprop: "name"}
+        Digital Sunrise
+      %p
+        комплексный интернет маркетинг
+        %br
+        для успешных продаж
+    %nav.main_menu.pull-right
+      %ul
+        / %li Услуги
+        / %li Агентство
+        / %li Контакты
+        / %li Полезные статьи
+        %li +7 (342) 202-04-97
+    .promo_block
+      %h1{ itemprop: "description"}
+        Гарантированное увеличение продаж
+        %br
+        с помощью комплексного
+        %br.visible-md
+        интернет-маркетинга. 
+        %br
+        Увеличим прибыль за 28 или 365 дней 
+        %br
+        без увеличения бюджета на трафик.
+      %a.yellow_button{"data-target" => "#form-more", "data-toggle" => "modal", onclick: "yaCounter25983529.reachGoal('clickmore');"}
+        Узнать подробнее
+
 .key_features
   %h3.block_title.visible-xs.visible-sm Максимальная отдача
   .container
@@ -33,7 +116,7 @@
           разрабатывают детальный медиаплан с учетом
           %br
           особенностей вашего бизнеса и рынка
-        %a.black_button{"data-target" => "#form-modal", "data-toggle" => "modal"}
+        %a.black_button{"data-target" => "#form-plan", "data-toggle" => "modal", onclick: "yaCounter25983529.reachGoal('clickplan');"}
           Спланировать бюджет
       .col-md-2
         .plan
@@ -149,7 +232,7 @@
         %p
           Мы осуществляем контроль расхода рекламного бюджета, вносим регулярные улучшения в рекламу, рассчитываем стоимость клиента, ROI, LTV и оптимизируем эти показатели.
     .row
-      %a.yellow_button.hidden-xs.hidden-sm{"data-target" => "#form-modal", "data-toggle" => "modal"}
+      %a.yellow_button.hidden-xs.hidden-sm{"data-target" => "#form-go", "data-toggle" => "modal", onclick: "yaCounter25983529.reachGoal('clickgo');"}
         Начните с консультации
 
 .work_with_us
@@ -180,7 +263,7 @@
           личный менеджер
     .row
       .col-md-4
-        %a.yellow_button.visible-xs.visible-sm{"data-target" => "#form-modal", "data-toggle" => "modal"}
+        %a.yellow_button.visible-xs.visible-sm{"data-target" => "#form-go", "data-toggle" => "modal", onclick: "yaCounter25983529.reachGoal('clickgo');"}
           Начните с консультации
 
 %img{style:"display:none;", itemprop: "image", src: "/ds.jpg"}

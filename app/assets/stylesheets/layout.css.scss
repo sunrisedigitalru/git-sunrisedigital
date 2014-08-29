@@ -61,6 +61,8 @@
 	background: #333;
 	padding: 40px 0 40px 0;
 	
+	a, a:hover { color: #fff; cursor: pointer;}
+	
 	.copyright, .tagline {
 		line-height: 20px;
 		font-size: 14px;
@@ -131,7 +133,7 @@
 	}
 }
 
-#form-modal {
+#form-more, #form-plan, #form-go, #privacy_policy {
 	.modal-content {
 		border-bottom-left-radius: 0px;
 		border-top-left-radius: 0px;
@@ -150,6 +152,7 @@
 		}
 	}
 	.modal-body {
+		
 		p {
 			color: #4d4d4d;
 			font-weight: 400;
@@ -161,7 +164,7 @@
 			padding: 0 10px;
 			border: 1px solid #999;
 			background: #fff;
-			color: #999;
+			color: #0e0e0e;
 			margin-bottom: 10px;
 		}
 		input[type="submit"]{
