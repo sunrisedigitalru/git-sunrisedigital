@@ -274,8 +274,8 @@
 			margin-bottom: 20px;
 		}
 	}
-	#form-modal {
-		.modal-content {
+	#form-more, #form-go, #form-plan {
+		.modal-body {
 			form {
 				text-align: center;
 				input[type="submit"] {
@@ -285,6 +285,33 @@
 				}
 				input[type="text"], input[type="tel"], input[type="submit"] {width: 100%;}
 			}
+			span {
+				width: auto;
+				vertical-align:middle;
+			}
+		}
+	}
+	.footer .social-nav ul li {
+		a {
+			width: 34px;
+			height: 35px;
+			display: block;
+			background: image-url("social-icons-sm.png");
+			border-radius: 1px;
+			&.fb {background-position: 0 0;}
+			&.fb:hover {background-position: -34px 0;}
+			&.vk {background-position: -68px 0;}
+			&.vk:hover {background-position: -102px 0;}
+			&.tw {background-position: -136px 0;}
+			&.tw:hover {background-position: -170px 0;}
+			&.gp {background-position: -204px 0;}
+			&.gp:hover {background-position: -238px 0;}
+			&.li {background-position: -272px 0;}
+			&.li:hover {background-position: -306px 0;}
+			&.ss {background-position: -340px 0;}
+			&.ss:hover {background-position: -374px 0;}
+			&.vi {background-position: -408px 0;}
+			&.vi:hover {background-position: -442px 0;}
 		}
 	}
 }
@@ -295,8 +322,5 @@
 			h1 {font-size: 36px; line-height: 36px;}
 			p {margin-left: 75px; font-size: 12px;}
 		}
-	}
-	.footer {
-		img {width: 34px;}
 	}
 }
