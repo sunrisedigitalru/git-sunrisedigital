@@ -28,6 +28,8 @@ body.modal-open {
     padding-right: 0px !important;
 }
 
+.clear { clear: both;}
+
 .flash_message {
 	position: fixed;
 	z-index: 9999;
