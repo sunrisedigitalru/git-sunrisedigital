@@ -2,7 +2,9 @@
   .container
     .row
       .col-md-6
-        %span.copyright &copy; 2011-2014 Digital Sunrise
+        %span.copyright
+          &copy; 
+          = "2011-#{Time.now.year} Digital Sunrise"
         %nav.social-nav
           %ul
             %li
