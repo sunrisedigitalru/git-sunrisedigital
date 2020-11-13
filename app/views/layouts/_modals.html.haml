@@ -13,11 +13,11 @@
             %p
               Залог эффективности интернет-маркетинга – комплексность с прицелом на потенциального клиента. Заполните форму, введите свое имя, телефон и email и мы, без увеличения рекламного бюджета, увеличим количество звонков и заявок с вашего сайта.
           .col-md-5.col-sm-5
-            = form_for @request, validate: true, url: requests_submit_form_path, method: "get", html: {onsubmit: "yaCounter25983529.reachGoal('submitmore');"} do |f|
+            = form_for @request, validate: true, url: requests_submit_form_path, method: "get", html: {id: "submitmore", onsubmit: "yaCounter25983529.reachGoal('submitmore');"} do |f|
               = f.hidden_field :type, value: "More"
               = f.text_field :name, placeholder: "Ваше имя"
               = f.phone_field :phone, placeholder: "Телефон"
-              = f.text_field :email, placeholder: "E-mail"
+              = f.text_field :email, placeholder: "E-mail", type: "email"
               = f.submit "Отправить"
             %p
               = image_tag "secure.png"
@@ -39,11 +39,11 @@
             %p
               Введите ваше имя, телефон и email и получите детальное Коммерческое предложение в течение 2-х рабочих дней, с момента оформления заказа. Мы гарантируем, что ваши персональные данные будут использоваться только для разработки КП.
           .col-md-5.col-sm-5
-            = form_for @request, :validate => true, url: requests_submit_form_path, method: "get", html: { onsubmit: "yaCounter25983529.reachGoal('submitplan');"} do |f|
+            = form_for @request, validate: true, url: requests_submit_form_path, method: "get", html: { id: 'submitplan', onsubmit: "yaCounter25983529.reachGoal('submitplan');"} do |f|
               = f.hidden_field :type, value: "Plan"
               = f.text_field :name, placeholder: "Ваше имя"
               = f.phone_field :phone, placeholder: "Телефон"
-              = f.text_field :email, placeholder: "E-mail"
+              = f.text_field :email, placeholder: "E-mail", type: "email"
               = f.submit "Отправить"
             %p
               = image_tag "secure.png"
@@ -64,11 +64,11 @@
             %p
               Возникли вопросы? Нужна профессиональная консультация? Вам неудобно описывать задачу по телефону? Введите свое имя, email и телефон, мы свяжемся с вами удобным для вас способом, ответим на ваши вопросы, уточним задачи, отправим коммерческое предложение.
           .col-md-5.col-sm-5
-            = form_for @request, :validate => true, url: requests_submit_form_path, method: "get", html: {onsubmit: "yaCounter25983529.reachGoal('submitgo');"} do |f|
+            = form_for @request, :validate => true, url: requests_submit_form_path, method: "get", html: { id: 'submitgo', onsubmit: "yaCounter25983529.reachGoal('submitgo');"} do |f|
               = f.hidden_field :type, value: "Go"
               = f.text_field :name, placeholder: "Ваше имя"
               = f.phone_field :phone, placeholder: "Телефон"
-              = f.text_field :email, placeholder: "E-mail"
+              = f.text_field :email, placeholder: "E-mail", type: "email"
               = f.submit "Отправить"
             %p
               = image_tag "secure.png"
