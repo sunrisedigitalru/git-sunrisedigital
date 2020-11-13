@@ -1,3 +1,8 @@
+// Google Tag Manager (noscript)
+%noscript
+  %iframe{:height => "0", :src => "https://www.googletagmanager.com/ns.html?id=GTM-P3RPFF4", :style => "display:none;visibility:hidden", :width => "0"}
+// End Google Tag Manager (noscript)
+
 .header-sm.visible-xs.visible-sm
   .logo
     .container
@@ -12,7 +17,8 @@
     .container
       / Brand and toggle get grouped for better mobile display
       .navbar-header
-        %a.navbar-brand.pull-right.hidden-sm{href: "tel:+7 (342) 202-04-97"} +7 (342) 202-04-97
+        %a.navbar-brand.pull-right.hidden-sm{href: "tel: #{ENV['PHONE']}"}
+          = ENV["PHONE"]
         %button.navbar-toggle.pull-left{"data-target" => "#navbar-collapse", "data-toggle" => "collapse", :type => "button"}
           %span.sr-only Toggle navigation
           %span.icon-bar
@@ -20,7 +26,8 @@
           %span.icon-bar
       / Collect the nav links, forms, and other content for toggling
       #navbar-collapse.collapse.navbar-collapse
-        %a.navbar-brand.navbar-right.hidden-xs{href: "tel:+7 (342) 202-04-97"} +7 (342) 202-04-97
+        %a.navbar-brand.navbar-right.hidden-xs{href: "tel: #{ENV['PHONE']}"}
+          = ENV["PHONE"]
         %ul.nav.navbar-nav
           %li 
             %a{:href => "#"} Услуги
@@ -66,7 +73,9 @@
         / %li Агентство
         / %li Контакты
         / %li Полезные статьи
-        %li +7 (342) 202-04-97
+        %li
+          %a{href: "tel: #{ENV['PHONE']}"}
+            = ENV["PHONE"]
     .promo_block
       %h1{ itemprop: "description"}
         Гарантированное увеличение продаж
@@ -266,4 +275,4 @@
         %a.yellow_button.visible-xs.visible-sm{"data-target" => "#form-go", "data-toggle" => "modal", onclick: "yaCounter25983529.reachGoal('clickgo');"}
           Начните с консультации
 
-%img{style:"display:none;", itemprop: "image", src: "/ds.jpg"}
+= image_tag("ds.jpg", style:"display:none;", itemprop: "image")

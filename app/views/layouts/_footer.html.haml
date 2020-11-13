@@ -8,11 +8,11 @@
         %nav.social-nav
           %ul
             %li
-              %a.fb{href: "#"}
+              %a.fb{href: "https://www.facebook.com/digital.sunrise/"}
             %li
               %a.vk{href: "#"}
             %li
-              %a.tw{href: "#"}
+              %a.tw{href: "https://twitter.com/digital5unrise"}
             %li
               %a.gp{href: "#"}
             %li
@@ -31,9 +31,10 @@
       .col-md-6.hidden-xs.hidden-sm
         %nav.main_menu.pull-right
           %ul
-            %li= mail_to "hello@digitalsunrise.ru"
+            %li= mail_to "#{ENV['EMAIL']}"
             %li 
-              %a{href: "tel:+7 (342) 202-04-97"} +7 (342) 202-04-97
+              %a{href: "tel: #{ENV['PHONE']}"}
+                = ENV["PHONE"]
         %hr.pull-right
         %span.tagline.pull-right Системный интернет-маркетинг на B2B и B2C рынках
         %br.clear
