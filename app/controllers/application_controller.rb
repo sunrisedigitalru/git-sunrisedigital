@@ -5,13 +5,13 @@ class ApplicationController < ActionController::Base
   def validator(object)
     object.valid?
     model = object.class.name.underscore.to_sym
-    field = params[model].first[0]
+    field = params["request"].values.first
     @errors = object.errors[field]
 
     if @errors.empty?
       @errors = true
     else
-      name = t("activerecord.attributes.#{model}.#{field}")
+      name = t("activerecord.attributes.request.#{field}")
       @errors.map! { |e| "#{name} #{e}<br />" }
     end
   end
