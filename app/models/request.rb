@@ -14,7 +14,7 @@ class Request
     @phone = args[:phone]
     @email = args[:email]
     @message = String.new
-    #compose_message(args)
+    compose_message(args)
   end
 
   def persisted?
@@ -29,7 +29,7 @@ class Request
 
   def compose_message(args={})
     args.each do |k, val|
-      key = I18n.t("activerecord.attributes.#{model_name}.#{k}")
+      key = I18n.t("activerecord.attributes.request.#{k}")
       @message += "#{key}:&nbsp;#{val}&nbsp;<br/>"
     end
   end
