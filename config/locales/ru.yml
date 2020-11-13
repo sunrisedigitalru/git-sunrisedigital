@@ -1,0 +1,28 @@
+ru:
+  order_notifier:
+    received:
+      subject: "Заявка с сайта DigitalSunrise"
+  activerecord:
+    attributes:
+      request:
+        type: "Тип"
+        name: "Имя"
+        phone: "Телефон"
+        email: "Email"
+        utm_source: "UTM_SOURCE"
+        utm_campaign: "UTM_CAMPAIGN"
+        utm_term: "UTM_TERM"
+        utm_medium: "UTM_MEDIUM"
+        utm_content: "UTM_CONTENT"
+        
+    errors:
+      models:
+        request:
+          attributes:
+            name:
+              blank: "необходимо ввести"
+            phone:
+              blank: "обязателен"
+              invalid: "имеет неверный формат"
+            email:
+              invalid: "имеет неверный формат"

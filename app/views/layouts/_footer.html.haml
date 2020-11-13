@@ -1,0 +1,39 @@
+.footer
+  .container
+    .row
+      .col-md-6
+        %span.copyright &copy; 2011-2014 Digital Sunrise
+        %nav.social-nav
+          %ul
+            %li
+              %a.fb{href: "#"}
+            %li
+              %a.vk{href: "#"}
+            %li
+              %a.tw{href: "#"}
+            %li
+              %a.gp{href: "#"}
+            %li
+              %a.li{href: "#"}
+            %li
+              %a.ss{href: "#"}
+            %li
+              %a.vi{href: "#"}
+        %span.tagline.visible-xs.visible-sm 
+          Системный интернет-маркетинг 
+          %br.visible-xs
+          на B2B и B2C рынках
+          %br
+          %a{"data-target" => "#privacy_policy", "data-toggle" => "modal"}
+            Политика конфиденциальности
+      .col-md-6.hidden-xs.hidden-sm
+        %nav.main_menu.pull-right
+          %ul
+            %li= mail_to "hello@digitalsunrise.ru"
+            %li 
+              %a{href: "tel:+7 (342) 202-04-97"} +7 (342) 202-04-97
+        %hr.pull-right
+        %span.tagline.pull-right Системный интернет-маркетинг на B2B и B2C рынках
+        %br.clear
+        %a.pull-right{"data-target" => "#privacy_policy", "data-toggle" => "modal"}
+          Политика конфиденциальности

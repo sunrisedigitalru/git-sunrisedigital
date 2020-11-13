@@ -1,0 +1,34 @@
+source 'https://rubygems.org'
+git_source(:github) { |repo| "https://github.com/#{repo}.git" }
+
+ruby '2.6.3'
+gem 'rails', '~> 6.0.3', '>= 6.0.3.2'
+gem 'pg'
+
+# assets
+gem 'bootstrap-sass', '~> 3.4.1'
+gem 'coffee-rails'
+gem 'jquery-rails'
+gem 'jquery-validation-rails'
+gem 'haml-rails'
+gem 'sass-rails', '>= 6'
+gem 'sassc-rails', '>= 2.1.0'
+gem 'uglifier', '>= 1.3.0'
+
+# other
+gem 'bootsnap', '>= 1.4.2', require: false
+gem 'jbuilder', '~> 2.7'
+gem 'puma', '~> 4.1'
+gem 'turbolinks', '~> 5'
+
+group :development do
+  gem 'listen', '~> 3.2'
+  gem 'spring'
+  gem 'spring-watcher-listen', '~> 2.0.0'
+end
+
+group :development, :test do
+  gem 'brakeman', require: false
+  gem 'bundler-audit', require: false
+  gem 'dotenv-rails'
+end

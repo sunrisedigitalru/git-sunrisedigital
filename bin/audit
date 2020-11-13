@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+
+set -e
+
+bin/bundle-audit update && bin/bundle-audit check
+brakeman

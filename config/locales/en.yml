@@ -1,0 +1,26 @@
+en:
+  order_notifier:
+    received:
+      subject: "Request from DigitalSunrise website"
+  activerecord:
+    attributes:
+      request:
+        type: "Type"
+        name: "Name"
+        phone: "Phone"
+        email: "Email"
+        utm_source: "UTM_SOURCE"
+        utm_campaign: "UTM_CAMPAIGN"
+        utm_term: "UTM_TERM"
+        utm_medium: "UTM_MEDIUM"
+        utm_content: "UTM_CONTENT"
+        
+    errors:
+      models:
+        request:
+          attributes:
+            phone:
+              blank: "can`t be blank."
+              invalid: "has invalid format."
+            email:
+              invalid: "has invalid format."
