@@ -185,18 +185,14 @@ body.modal-open {
 					border-radius: 1px;
 					&.fb {background-position: 0 0;}
 					&.fb:hover {background-position: -45px 0;}
-					&.vk {background-position: -90px 0;}
-					&.vk:hover {background-position: -135px 0;}
 					&.tw {background-position: -180px 0;}
 					&.tw:hover {background-position: -225px 0;}
-					&.gp {background-position: -270px 0;}
-					&.gp:hover {background-position: -315px 0;}
-					&.li {background-position: -360px 0;}
-					&.li:hover {background-position: -405px 0;}
-					&.ss {background-position: -450px 0;}
-					&.ss:hover {background-position: -495px 0;}
-					&.vi {background-position: -540px 0;}
-					&.vi:hover {background-position: -585px 0;}
+					&.yt {background: image-url("youtube_y.svg");}
+					&.yt:hover {background: image-url("youtube_b.svg");}
+					&.tg {background: image-url("telegram_y.svg");}
+					&.tg:hover {background: image-url("telegram_b.svg");}
+					&.in {background: image-url("insta_y.svg");}
+					&.in:hover {background: image-url("insta_b.svg");}
 				}
 			}
 		}
