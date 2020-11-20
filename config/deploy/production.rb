@@ -1,5 +1,5 @@
 
-server '167.179.66.68', user: 'deployer', roles: %w{app web}
+server "#{ENV['HOST_IP']}", user: 'deployer', roles: %w{app web}
 
 
 # server-based syntax
