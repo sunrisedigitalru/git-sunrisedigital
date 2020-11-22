@@ -12,6 +12,7 @@ jQuery ->
         url: validate_url
         type: 'post'
     'request[email]':
+      required: true
       remote:
         url: validate_url
         type: 'post'
