@@ -1,15 +1,13 @@
 !!!
-%html
+%html{lang: "ru"}
   %head
     %title Digital Sunrise
     %link{href: "/favicon.ico", rel: "icon", type: "image/x-icon"}
     
     = render "layouts/meta"
-    
-    %meta{content: "width=device-width, user-scalable=no", name: "viewport"}
-    %meta{content: "telephone=yes", name: "format-detection"}
+
     = stylesheet_link_tag "application", media: "all"
-    %link{href: "//fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap", rel: "stylesheet"}
+    %link{href: "https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap", rel: "stylesheet"}
     
     = csrf_meta_tags
   %body
@@ -21,6 +19,5 @@
     = render 'layouts/footer'
     
     = render 'layouts/modals'
-    = render 'layouts/cookie_message'
     = render 'layouts/scripts'
     = javascript_include_tag "application", async: true

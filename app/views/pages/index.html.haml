@@ -6,7 +6,10 @@
 .header-sm.visible-xs.visible-sm
   .logo
     .container
-      = image_tag "logo.png"
+      %picture
+        %source{type: "image/webp", srcset: "#{image_path('logo.webp')}", loading: "lazy", width: "330", height: "82"}
+        %source{type: "image/png", srcset: "#{image_path('logo.png')}", loading: "lazy", width: "330", height: "82"}
+        = image_tag("logo.png", alt: "Логотип", loading: "lazy", width: "330", height: "82")
       %h2{ itemprop: "name"}
         Digital Sunrise
       %p
@@ -60,7 +63,10 @@
 .header.hidden-xs.hidden-sm
   .container
     .logo
-      = image_tag "logo.png"
+      %picture
+        %source{type: "image/webp", srcset: "#{image_path('logo.webp')}", loading: "lazy", width: "330", height: "82"}
+        %source{type: "image/png", srcset: "#{image_path('logo.png')}", loading: "lazy", width: "330", height: "82"}
+        = image_tag("logo.png", alt: "Логотип", loading: "lazy", width: "330", height: "82")
       %h2{ itemprop: "name"}
         Digital Sunrise
       %p
@@ -98,19 +104,28 @@
     .row.features
       .col-md-4
         .features__image_wrapper
-          = image_tag "analyticst"
+          %picture
+            %source{type: "image/webp", srcset: "#{image_path('analyticst.webp')}", loading: "lazy", width: "147", height: "125"}
+            %source{type: "image/jpeg", srcset: "#{image_path('analyticst.jpg')}", loading: "lazy", width: "147", height: "125"}
+            = image_tag("analyticst.jpg", alt: "Цель", loading: "lazy", width: "147", height: "125")
         %h4 Цель
         %p
           Ставим цели, проводим аналитику, фиксируем текущие и заданные показатели
       .col-md-4
         .features__image_wrapper
-          = image_tag "planningt"
+          %picture
+            %source{type: "image/webp", srcset: "#{image_path('planningt.webp')}", loading: "lazy", width: "122", height: "125"}
+            %source{type: "image/jpeg", srcset: "#{image_path('planningt.jpg')}", loading: "lazy", width: "122", height: "125"}
+            = image_tag("planningt.jpg", alt: "Старт", loading: "lazy", width: "122", height: "125")
         %h4 Старт
         %p
           Планируем и разрабатываем концепцию проекта. Запускаем рекламную кампанию, измеряем KPI на каждом этапе.
       .col-md-4
         .features__image_wrapper
-          = image_tag "trackingt"
+          %picture
+            %source{type: "image/webp", srcset: "#{image_path('trackingt.webp')}", loading: "lazy", width: "101", height: "125"}
+            %source{type: "image/jpeg", srcset: "#{image_path('trackingt.jpg')}", loading: "lazy", width: "101", height: "125"}
+            = image_tag("trackingt.jpg", alt: "Результат", loading: "lazy", width: "101", height: "125")
         %h4 Результат
         %p
           Анализируем достигнутые цели, проводим серию тестов, вносим изменения, достигаем заданного результата
@@ -138,7 +153,10 @@
     .row.features
       .col-md-4
         .features__image_wrapper
-          = image_tag "social_networks.png"
+          %picture
+            %source{type: "image/webp", srcset: "#{image_path('social_networks.webp')}", loading: "lazy", width: "95", height: "76"}
+            %source{type: "image/png", srcset: "#{image_path('social_networks.png')}", loading: "lazy", width: "95", height: "76"}
+            = image_tag("social_networks.png", alt: "Многоканальные рекламные кампании", loading: "lazy", width: "95", height: "76")
         %h4 
           Многоканальные рекламные
           %br
@@ -147,7 +165,10 @@
           Включают в себя популяризацию бренда (разработка стратегии и концепции, мониторинг), создание и продвижение площадок. Это позволяет оптимизировать маркетинг-каналы, увеличить эффективность компании на 79% за счёт ремаркетинга, оценить экономическую целесообразность всего комплекса применяемых инструментов.
       .col-md-4
         .features__image_wrapper
-          = image_tag "efficiency.png"
+          %picture
+            %source{type: "image/webp", srcset: "#{image_path('efficiency.webp')}", loading: "lazy", width: "66", height: "76"}
+            %source{type: "image/png", srcset: "#{image_path('efficiency.png')}", loading: "lazy", width: "66", height: "76"}
+            = image_tag("efficiency.png", alt: "Оптимизация коэффициента конверсии, веб-аналитика", loading: "lazy", width: "66", height: "76")
         %h4 
           Оптимизация коэффициента конверсии,
           %br веб-аналитика 
@@ -155,7 +176,10 @@
           Мы предлагаем вам разработку аналитической инфраструктуры, создание индивидуальных инструментов управленческой отчетности и отслеживания данных. Системный подход к вопросу повышения коэффициента конверсии, сплит-тесты для увеличения вашей прибыли более чем в 2-3 раза!
       .col-md-4
         .features__image_wrapper
-          = image_tag "planning.png"
+          %picture
+            %source{type: "image/webp", srcset: "#{image_path('planning.webp')}", loading: "lazy", width: "96", height: "76"}
+            %source{type: "image/png", srcset: "#{image_path('planning.png')}", loading: "lazy", width: "96", height: "76"}
+            = image_tag("planning.png", alt: "Тонкая настройка рекламы для роста ваших продаж", loading: "lazy", width: "96", height: "76")
         %h4
           Тонкая настройка рекламы для 
           %br
@@ -163,12 +187,21 @@
         %p
           Мы не только организовываем и проводим рекламные кампании, но и осуществляем текущий контроль над выполнением всех мероприятий, оцениваем коммуникативную и экономическую эффективность рекламы. Это позволяет постоянно совершенствовать маркетинговые коммуникации, повышая эффективность контакта с аудиторией.
     .sales_funnel
-      = image_tag "sales_funnel.png", class: "hidden-xs hidden-sm"
-      = image_tag "sales_funnel_sm.png", class: "visible-xs visible-sm"
+      %picture
+        %source{type: "image/webp", srcset: "#{image_path('sales_funnel.webp')}", class: "hidden-xs hidden-sm", loading: "lazy", width: "745", height: "383"}
+        %source{type: "image/png", srcset: "#{image_path('sales_funnel.png')}", class: "hidden-xs hidden-sm", loading: "lazy", width: "745", height: "383"}
+        = image_tag("sales_funnel.png", alt: "Воронка продаж", class: "hidden-xs hidden-sm", loading: "lazy", width: "745", height: "383")
+      %picture
+        %source{type: "image/webp", srcset: "#{image_path('sales_funnel_sm.webp')}", class: "visible-xs visible-sm", loading: "lazy", width: "290", height: "627"}
+        %source{type: "image/png", srcset: "#{image_path('sales_funnel_sm.png')}", class: "visible-xs visible-sm", loading: "lazy", width: "290", height: "627"}
+        = image_tag("sales_funnel_sm.png", alt: "Воронка продаж", class: "visible-xs visible-sm", loading: "lazy", width: "290", height: "627")
     .row.features
       .col-md-4
         .features__image_wrapper
-          = image_tag "analytic"
+          %picture
+            %source{type: "image/webp", srcset: "#{image_path('analytic.webp')}", loading: "lazy", width: "88", height: "88"}
+            %source{type: "image/png", srcset: "#{image_path('analytic.png')}", loading: "lazy", width: "88", height: "88"}
+            = image_tag("analytic.png", alt: "Реклама в нужное время и в нужном месте", loading: "lazy", width: "88", height: "88")
         %h4 
           Реклама в нужное время
           %br
@@ -177,7 +210,10 @@
           Реализуем комплекс мер, объединенных общей стратегией и KPI, направленных на увеличение прибыли и эффективного ROI. Наша цель &ndash; спрогнозировать сроки, бюджет и результат. Донести рекламное сообщение до максимально возможного числа потенциальных потребителей в рамках выделенного бюджета с минимальными затратами.
       .col-md-4
         .features__image_wrapper
-          = image_tag "integration.png"
+          %picture
+            %source{type: "image/webp", srcset: "#{image_path('integration.webp')}", loading: "lazy", width: "82", height: "80"}
+            %source{type: "image/png", srcset: "#{image_path('integration.png')}", loading: "lazy", width: "82", height: "80"}
+            = image_tag("integration.png", alt: "Интеграция с CRM и IP телефонией", loading: "lazy", width: "82", height: "80")
         %h4 
           Интеграция с CRM и 
           %br
@@ -186,7 +222,10 @@
           Позволяет проводить «сквозную» аналитику до продаж, считать и прогнозировать эффективность каждого рекламного канала в отдельности, измерять многоканальные коммуникации с клиентами и цикл сделки, централизованно управлять продажами и входящим маркетингом в реальном времени.
       .col-md-4
         .features__image_wrapper
-          = image_tag "sales.png"
+          %picture
+            %source{type: "image/webp", srcset: "#{image_path('sales.webp')}", loading: "lazy", width: "79", height: "65"}
+            %source{type: "image/png", srcset: "#{image_path('sales.png')}", loading: "lazy", width: "79", height: "65"}
+            = image_tag("sales.png", alt: "Мы поднимем ваши продажи на новый уровень", loading: "lazy", width: "79", height: "65")
         %h4 
           Мы поднимем ваши продажи
           %br
@@ -207,7 +246,10 @@
     .row.features
       .col-md-2.col-md-offset-1.col-sm-6
         .features__image_wrapper
-          = image_tag "request.png"
+          %picture
+            %source{type: "image/webp", srcset: "#{image_path('request.webp')}", loading: "lazy", width: "71", height: "86"}
+            %source{type: "image/png", srcset: "#{image_path('request.png')}", loading: "lazy", width: "71", height: "86"}
+            = image_tag("request.png", alt: "Заявка", loading: "lazy", width: "71", height: "86")
         %h4 Заявка
         %p
           Вы оставляете
@@ -216,7 +258,10 @@
           с нами по телефону
       .col-md-2.col-sm-6
         .features__image_wrapper
-          = image_tag "information.png"
+          %picture
+            %source{type: "image/webp", srcset: "#{image_path('information.webp')}", loading: "lazy", width: "88", height: "86"}
+            %source{type: "image/png", srcset: "#{image_path('information.png')}", loading: "lazy", width: "88", height: "86"}
+            = image_tag("information.png", alt: "Аналитика и цели", loading: "lazy", width: "88", height: "86")
         %h4 Аналитика и цели
         %p
           Мы анализируем динамику спроса
@@ -224,19 +269,28 @@
           на основании чего составляем медиаплан. Просчитываем маркетинговый бюджет для рекламной кампании  
       .col-md-2.col-sm-6
         .features__image_wrapper
-          = image_tag "strategy.png"
+          %picture
+            %source{type: "image/webp", srcset: "#{image_path('strategy.webp')}", loading: "lazy", width: "86", height: "86"}
+            %source{type: "image/png", srcset: "#{image_path('strategy.png')}", loading: "lazy", width: "86", height: "86"}
+            = image_tag("strategy.png", alt: "Стратегии успеха", loading: "lazy", width: "86", height: "86")
         %h4 Стратегии успеха
         %p
           Мы разрабатываем систему маркетинговых мероприятий, направленную на достижение целей рекламной кампании
       .col-md-2.col-sm-6
         .features__image_wrapper
-          = image_tag "customization.png"
+          %picture
+            %source{type: "image/webp", srcset: "#{image_path('customization.webp')}", loading: "lazy", width: "88", height: "86"}
+            %source{type: "image/png", srcset: "#{image_path('customization.png')}", loading: "lazy", width: "88", height: "86"}
+            = image_tag("customization.png", alt: "Анализ показателей", loading: "lazy", width: "88", height: "86")
         %h4 Анализ показателей
         %p
           Детальный анализ статистики позволяет понять, какие шаги необходимо предпринять для увеличения числа клиентов и оптимизации бюджета на трафик.
       .col-md-2.col-sm-6.col-sm-offset-3.col-md-offset-0
         .features__image_wrapper
-          = image_tag "support.png"
+          %picture
+            %source{type: "image/webp", srcset: "#{image_path('support.webp')}", loading: "lazy", width: "66", height: "86"}
+            %source{type: "image/png", srcset: "#{image_path('support.png')}", loading: "lazy", width: "66", height: "86"}
+            = image_tag("support.png", alt: "Системное развитие", loading: "lazy", width: "66", height: "86")
         %h4 Системное развитие
         %p
           Мы осуществляем контроль расхода рекламного бюджета, вносим регулярные улучшения в рекламу, рассчитываем стоимость клиента, ROI, LTV и оптимизируем эти показатели.
@@ -252,18 +306,27 @@
     .row.features
       .col-md-4
         .features__image_wrapper
-          = image_tag "reports.png"
+          %picture
+            %source{type: "image/webp", srcset: "#{image_path('reports.webp')}", loading: "lazy", width: "96", height: "125"}
+            %source{type: "image/png", srcset: "#{image_path('reports.png')}", loading: "lazy", width: "96", height: "125"}
+            = image_tag("reports.png", alt: "Прозрачная отчётность раз в месяц, сводные данные, аналитика, выводы", loading: "lazy", width: "96", height: "125")
         %h4 Прозрачная отчётность раз в месяц, сводные данные, аналитика, выводы
       .col-md-4
         .features__image_wrapper
-          = image_tag "clock.png"
+          %picture
+            %source{type: "image/webp", srcset: "#{image_path('clock.webp')}", loading: "lazy", width: "118", height: "125"}
+            %source{type: "image/png", srcset: "#{image_path('clock.png')}", loading: "lazy", width: "118", height: "125"}
+            = image_tag("clock.png", alt: "Прогнозирование и комплексная оценка результата, сроков и стоимости", loading: "lazy", width: "118", height: "125")
         %h4 
           Прогнозирование и комплексная оценка результата, сроков 
           %br
           и стоимости
       .col-md-4
         .features__image_wrapper
-          = image_tag "in_touch.png"
+          %picture
+            %source{type: "image/webp", srcset: "#{image_path('in_touch.webp')}", loading: "lazy", width: "131", height: "125"}
+            %source{type: "image/png", srcset: "#{image_path('in_touch.png')}", loading: "lazy", width: "131", height: "125"}
+            = image_tag("in_touch.png", alt: "Контроль всех процессов в реальном времени, личный менеджер", loading: "lazy", width: "131", height: "125")
         %h4 
           Контроль всех процессов
           %br
@@ -275,4 +338,4 @@
         %a.yellow_button.visible-xs.visible-sm{"data-target" => "#form-go", "data-toggle" => "modal", onclick: "ym(48924050, 'reachGoal', 'clickgo_dsk');"}
           Начните с консультации
 
-= image_tag("ds.jpg", style:"display:none;", itemprop: "image")
+= image_tag("ds.jpg", style:"display:none;", itemprop: "image", alt: "Логотип", loading: "lazy", width: "1000", height: "1000")
