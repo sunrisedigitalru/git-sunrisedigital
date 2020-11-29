@@ -8,10 +8,6 @@ html {
 	font-weight: 300;
 	max-width: 100%;
 	overflow-x: hidden;
-	input[type="button"] {
-		-webkit-appearance: button;
-		cursor: pointer;
-	}
 }
 body {
 	margin: 0;
@@ -24,45 +20,11 @@ body {
 	max-width: 100%;
 	overflow-x: hidden;
 }
-article {
-	display: block;
-}
-aside {
-	display: block;
-}
-details {
-	display: block;
-}
-figcaption {
-	display: block;
-}
-figure {
-	display: block;
-}
-footer {
-	display: block;
-}
-header {
-	display: block;
-}
-hgroup {
-	display: block;
-}
-main {
-	display: block;
-}
-menu {
-	display: block;
-}
+
 nav {
 	display: block;
 }
-section {
-	display: block;
-}
-summary {
-	display: block;
-}
+
 a {
 	background-color: transparent;
 	color: #337ab7;
@@ -130,47 +92,12 @@ input {
 	font-size: inherit;
 	line-height: inherit;
 }
-optgroup {
-	color: inherit;
-	font: inherit;
-	margin: 0;
-}
-select {
-	color: inherit;
-	font: inherit;
-	margin: 0;
-	text-transform: none;
-	font-family: inherit;
-	font-size: inherit;
-	line-height: inherit;
-}
-textarea {
-	color: inherit;
-	font: inherit;
-	margin: 0;
-	font-family: inherit;
-	font-size: inherit;
-	line-height: inherit;
-}
-input[type="reset"] {
-	-webkit-appearance: button;
-	cursor: pointer;
-}
+
 input[type="submit"] {
 	-webkit-appearance: button;
 	cursor: pointer;
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-	background-color: transparent;
-}
-td {
-	padding: 0;
-}
-th {
-	padding: 0;
-}
+
 * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -232,67 +159,7 @@ h5 {
 	margin-bottom: 10px;
 	font-size: 14px;
 }
-h6 {
-	font-family: inherit;
-	font-weight: 500;
-	line-height: 1.1;
-	color: inherit;
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-.h1 {
-	font-family: inherit;
-	font-weight: 500;
-	line-height: 1.1;
-	color: inherit;
-	margin-top: 20px;
-	margin-bottom: 10px;
-	font-size: 36px;
-}
-.h2 {
-	font-family: inherit;
-	font-weight: 500;
-	line-height: 1.1;
-	color: inherit;
-	margin-top: 20px;
-	margin-bottom: 10px;
-	font-size: 30px;
-}
-.h3 {
-	font-family: inherit;
-	font-weight: 500;
-	line-height: 1.1;
-	color: inherit;
-	margin-top: 20px;
-	margin-bottom: 10px;
-	font-size: 24px;
-}
-.h4 {
-	font-family: inherit;
-	font-weight: 500;
-	line-height: 1.1;
-	color: inherit;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	font-size: 18px;
-}
-.h5 {
-	font-family: inherit;
-	font-weight: 500;
-	line-height: 1.1;
-	color: inherit;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	font-size: 14px;
-}
-.h6 {
-	font-family: inherit;
-	font-weight: 500;
-	line-height: 1.1;
-	color: inherit;
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
+
 p {
 	margin: 0 0 10px;
 }
@@ -300,10 +167,6 @@ p {
 	font-size: 85%;
 }
 ul {
-	margin-top: 0;
-	margin-bottom: 10px;
-}
-ol {
 	margin-top: 0;
 	margin-bottom: 10px;
 }
@@ -343,108 +206,22 @@ ol {
 		clear: both;
 	}
 }
-.col-xs-1 {
-	position: relative;
-	min-height: 1px;
-	padding-right: 15px;
-	padding-left: 15px;
-}
-.col-sm-1 {
-	position: relative;
-	min-height: 1px;
-	padding-right: 15px;
-	padding-left: 15px;
-}
-.col-md-1 {
-	position: relative;
-	min-height: 1px;
-	padding-right: 15px;
-	padding-left: 15px;
-}
-.col-lg-1 {
-	position: relative;
-	min-height: 1px;
-	padding-right: 15px;
-	padding-left: 15px;
-}
-.col-xs-2 {
-	position: relative;
-	min-height: 1px;
-	padding-right: 15px;
-	padding-left: 15px;
-}
-.col-sm-2 {
-	position: relative;
-	min-height: 1px;
-	padding-right: 15px;
-	padding-left: 15px;
-}
+
+
 .col-md-2 {
 	position: relative;
 	min-height: 1px;
 	padding-right: 15px;
 	padding-left: 15px;
 }
-.col-lg-2 {
-	position: relative;
-	min-height: 1px;
-	padding-right: 15px;
-	padding-left: 15px;
-}
-.col-xs-3 {
-	position: relative;
-	min-height: 1px;
-	padding-right: 15px;
-	padding-left: 15px;
-}
-.col-sm-3 {
-	position: relative;
-	min-height: 1px;
-	padding-right: 15px;
-	padding-left: 15px;
-}
-.col-md-3 {
-	position: relative;
-	min-height: 1px;
-	padding-right: 15px;
-	padding-left: 15px;
-}
-.col-lg-3 {
-	position: relative;
-	min-height: 1px;
-	padding-right: 15px;
-	padding-left: 15px;
-}
-.col-xs-4 {
-	position: relative;
-	min-height: 1px;
-	padding-right: 15px;
-	padding-left: 15px;
-}
-.col-sm-4 {
-	position: relative;
-	min-height: 1px;
-	padding-right: 15px;
-	padding-left: 15px;
-}
+
 .col-md-4 {
 	position: relative;
 	min-height: 1px;
 	padding-right: 15px;
 	padding-left: 15px;
 }
-.col-lg-4 {
-	position: relative;
-	min-height: 1px;
-	padding-right: 15px;
-	padding-left: 15px;
-}
-.col-xs-5 {
-	position: relative;
-	min-height: 1px;
-	padding-right: 15px;
-	padding-left: 15px;
-}
+
 .col-sm-5 {
 	position: relative;
 	min-height: 1px;
@@ -457,18 +234,7 @@ ol {
 	padding-right: 15px;
 	padding-left: 15px;
 }
-.col-lg-5 {
-	position: relative;
-	min-height: 1px;
-	padding-right: 15px;
-	padding-left: 15px;
-}
-.col-xs-6 {
-	position: relative;
-	min-height: 1px;
-	padding-right: 15px;
-	padding-left: 15px;
-}
+
 .col-sm-6 {
 	position: relative;
 	min-height: 1px;
@@ -481,138 +247,14 @@ ol {
 	padding-right: 15px;
 	padding-left: 15px;
 }
-.col-lg-6 {
-	position: relative;
-	min-height: 1px;
-	padding-right: 15px;
-	padding-left: 15px;
-}
-.col-xs-7 {
-	position: relative;
-	min-height: 1px;
-	padding-right: 15px;
-	padding-left: 15px;
-}
-.col-sm-7 {
-	position: relative;
-	min-height: 1px;
-	padding-right: 15px;
-	padding-left: 15px;
-}
-.col-md-7 {
-	position: relative;
-	min-height: 1px;
-	padding-right: 15px;
-	padding-left: 15px;
-}
-.col-lg-7 {
-	position: relative;
-	min-height: 1px;
-	padding-right: 15px;
-	padding-left: 15px;
-}
-.col-xs-8 {
-	position: relative;
-	min-height: 1px;
-	padding-right: 15px;
-	padding-left: 15px;
-}
-.col-sm-8 {
-	position: relative;
-	min-height: 1px;
-	padding-right: 15px;
-	padding-left: 15px;
-}
+
 .col-md-8 {
 	position: relative;
 	min-height: 1px;
 	padding-right: 15px;
 	padding-left: 15px;
 }
-.col-lg-8 {
-	position: relative;
-	min-height: 1px;
-	padding-right: 15px;
-	padding-left: 15px;
-}
-.col-xs-9 {
-	position: relative;
-	min-height: 1px;
-	padding-right: 15px;
-	padding-left: 15px;
-}
-.col-sm-9 {
-	position: relative;
-	min-height: 1px;
-	padding-right: 15px;
-	padding-left: 15px;
-}
-.col-md-9 {
-	position: relative;
-	min-height: 1px;
-	padding-right: 15px;
-	padding-left: 15px;
-}
-.col-lg-9 {
-	position: relative;
-	min-height: 1px;
-	padding-right: 15px;
-	padding-left: 15px;
-}
-.col-xs-10 {
-	position: relative;
-	min-height: 1px;
-	padding-right: 15px;
-	padding-left: 15px;
-}
-.col-sm-10 {
-	position: relative;
-	min-height: 1px;
-	padding-right: 15px;
-	padding-left: 15px;
-}
-.col-md-10 {
-	position: relative;
-	min-height: 1px;
-	padding-right: 15px;
-	padding-left: 15px;
-}
-.col-lg-10 {
-	position: relative;
-	min-height: 1px;
-	padding-right: 15px;
-	padding-left: 15px;
-}
-.col-xs-11 {
-	position: relative;
-	min-height: 1px;
-	padding-right: 15px;
-	padding-left: 15px;
-}
-.col-sm-11 {
-	position: relative;
-	min-height: 1px;
-	padding-right: 15px;
-	padding-left: 15px;
-}
-.col-md-11 {
-	position: relative;
-	min-height: 1px;
-	padding-right: 15px;
-	padding-left: 15px;
-}
-.col-lg-11 {
-	position: relative;
-	min-height: 1px;
-	padding-right: 15px;
-	padding-left: 15px;
-}
-.col-xs-12 {
-	position: relative;
-	min-height: 1px;
-	padding-right: 15px;
-	padding-left: 15px;
-}
+
 .col-sm-12 {
 	position: relative;
 	min-height: 1px;
@@ -625,12 +267,7 @@ ol {
 	padding-right: 15px;
 	padding-left: 15px;
 }
-.col-lg-12 {
-	position: relative;
-	min-height: 1px;
-	padding-right: 15px;
-	padding-left: 15px;
-}
+
 label {
 	display: inline-block;
 	max-width: 100%;
