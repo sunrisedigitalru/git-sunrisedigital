@@ -1542,6 +1542,14 @@ body.modal-open {
 	}
 }
 @media (max-width: 991px) {
+	.no-webp .promo_block {
+		background: image-url('header.jpg');
+	}
+
+	.webp .promo_block {
+		background: image-url('header.webp');
+	}
+
 	.key_features {
 		padding-bottom: 0;
 		.container {
@@ -1681,14 +1689,6 @@ body.modal-open {
 		margin: 0;
 		cursor: pointer;
 	}
-}
-
-.no-webp .promo_block {
-	background: image-url('header.jpg');
-}
-
-.webp .promo_block {
-	background: image-url('header.webp');
 }
 
 @media (max-width: 480px) {
