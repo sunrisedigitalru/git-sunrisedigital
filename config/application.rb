@@ -36,7 +36,7 @@ module DigitalSunrise
       'X-Content-Type-Options' => 'nosniff',
       'X-Download-Options' => 'noopen',
       'X-Permitted-Cross-Domain-Policies' => 'none',
-      'Referrer-Policy' => 'strict-origin-when-cross-origin'
+      'Referrer-Policy' => 'origin'
     }
   end
 end
