@@ -30,5 +30,13 @@ module DigitalSunrise
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    config.action_dispatch.default_headers = {
+      'X-Frame-Options' => 'SAMEORIGIN',
+      'X-Content-Type-Options' => 'nosniff',
+      'X-Download-Options' => 'noopen',
+      'X-Permitted-Cross-Domain-Policies' => 'none',
+      'Referrer-Policy' => 'strict-origin-when-cross-origin'
+    }
   end
 end
