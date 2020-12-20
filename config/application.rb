@@ -38,5 +38,6 @@ module DigitalSunrise
       'X-Permitted-Cross-Domain-Policies' => 'none',
       'Referrer-Policy' => 'origin'
     }
+    config.action_dispatch.default_headers.delete('X-Frame-Options')
   end
 end
