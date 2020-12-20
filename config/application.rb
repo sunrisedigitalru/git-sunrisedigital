@@ -32,12 +32,11 @@ module DigitalSunrise
     config.generators.system_tests = nil
 
     config.action_dispatch.default_headers = {
-      'X-Frame-Options' => 'SAMEORIGIN',
+      'X-Frame-Options' => 'ALLOW-FROM https://*.facebook.com/',
       'X-Content-Type-Options' => 'nosniff',
       'X-Download-Options' => 'noopen',
       'X-Permitted-Cross-Domain-Policies' => 'none',
       'Referrer-Policy' => 'origin'
     }
-    config.action_dispatch.default_headers.delete('X-Frame-Options')
   end
 end
