@@ -32,9 +32,9 @@
         %a.navbar-brand.navbar-right.hidden-xs{href: "tel: #{ENV['PHONE']}"}
           = ENV["PHONE"]
         %ul.nav.navbar-nav
-          %li 
+          %li
             %a{:href => "#"} Услуги
-          %li 
+          %li
             %a{:href => "#"} Агентство
           %li
             %a{:href => "#"} Контакты
@@ -45,21 +45,19 @@
   .promo_block
     .container
       %h1
-        Гарантированное
+        Омниканальные рекламные
         %br.visible-xs
-        увеличение продаж
-        %br.visible-sm.visible-xs
-        с помощью комплексного интернет-маркетинга.
-        %br.visible-sm.visible-xs
-        Увеличим прибыль
+        кампании для Вашего бизнеса.
         %br.visible-xs
-        за 28 или 365 дней
-        %br.visible-xs.visible-sm
-        без увеличения бюджета
+        Эффективное сочетание
         %br.visible-xs
-        на трафик.
+        наружной рекламы и digital.
+        %br
+        %br Без увеличения бюджета.
+        %br.visible-xs
+
       %a.yellow_button{"data-target" => "#form-more", "data-toggle" => "modal", onclick: "ym(48924050, 'reachGoal', 'clickmore_dsk');"}
-        Узнать подробнее
+        Больше клиентов
 .header.hidden-xs.hidden-sm
   .container
     .logo
@@ -84,23 +82,21 @@
             = ENV["PHONE"]
     .promo_block
       %h1{ itemprop: "description"}
-        Гарантированное увеличение продаж
+        Омниканальные рекламные кампании
         %br
-        с помощью комплексного
-        %br.visible-md
-        интернет-маркетинга. 
+        для Вашего бизнеса. Эффективное сочетание
         %br
-        Увеличим прибыль за 28 или 365 дней 
+        наружной рекламы и digital.
         %br
-        без увеличения бюджета на трафик.
+        %br Без увеличения бюджета.
       %a.yellow_button{"data-target" => "#form-more", "data-toggle" => "modal", onclick: "ym(48924050, 'reachGoal', 'clickmore_dsk');"}
-        Узнать подробнее
+        Больше новых клиентов
 
 .key_features
   %h3.block_title.visible-xs.visible-sm Максимальная отдача
   .container
     %h3.hidden-xs.hidden-sm Получите максимальную отдачу от интернет-рекламы
-    %hr.hidden-xs.hidden-sm 
+    %hr.hidden-xs.hidden-sm
     .row.features
       .col-md-4
         .features__image_wrapper
@@ -130,7 +126,7 @@
         %p
           Анализируем достигнутые цели, проводим серию тестов, вносим изменения, достигаем заданного результата
 
-.media_plan.hidden-xs.hidden-sm 
+.media_plan.hidden-xs.hidden-sm
   .container
     .row
       .col-md-8
@@ -144,12 +140,12 @@
           Спланировать бюджет
       .col-md-2
         .plan
-      
+
 .systematic_approach
   %h3.block_title.visible-xs.visible-sm Системный подход
   .container
-    %h3.hidden-xs.hidden-sm Cистемный интернет маркетинг и внедрение маркетинговой воронки
-    %hr.hidden-xs.hidden-sm 
+    %h3.hidden-xs.hidden-sm Cистемный интернет маркетинг и внедрение сквозной аналитики
+    %hr.hidden-xs.hidden-sm
     .row.features
       .col-md-4
         .features__image_wrapper
@@ -157,7 +153,7 @@
             %source{type: "image/webp", srcset: "#{image_path('social_networks.webp')}", loading: "lazy", width: "95", height: "76"}
             %source{type: "image/png", srcset: "#{image_path('social_networks.png')}", loading: "lazy", width: "95", height: "76"}
             = image_tag("social_networks.png", alt: "Многоканальные рекламные кампании", loading: "lazy", width: "95", height: "76")
-        %h4 
+        %h4
           Многоканальные рекламные
           %br
           кампании
@@ -169,9 +165,9 @@
             %source{type: "image/webp", srcset: "#{image_path('efficiency.webp')}", loading: "lazy", width: "66", height: "76"}
             %source{type: "image/png", srcset: "#{image_path('efficiency.png')}", loading: "lazy", width: "66", height: "76"}
             = image_tag("efficiency.png", alt: "Оптимизация коэффициента конверсии, веб-аналитика", loading: "lazy", width: "66", height: "76")
-        %h4 
+        %h4
           Оптимизация коэффициента конверсии,
-          %br веб-аналитика 
+          %br веб-аналитика
         %p
           Мы предлагаем вам разработку аналитической инфраструктуры, создание индивидуальных инструментов управленческой отчетности и отслеживания данных. Системный подход к вопросу повышения коэффициента конверсии, сплит-тесты для увеличения вашей прибыли более чем в 2-3 раза!
       .col-md-4
@@ -181,7 +177,7 @@
             %source{type: "image/png", srcset: "#{image_path('planning.png')}", loading: "lazy", width: "96", height: "76"}
             = image_tag("planning.png", alt: "Тонкая настройка рекламы для роста ваших продаж", loading: "lazy", width: "96", height: "76")
         %h4
-          Тонкая настройка рекламы для 
+          Тонкая настройка рекламы для
           %br
           роста ваших продаж
         %p
@@ -202,7 +198,7 @@
             %source{type: "image/webp", srcset: "#{image_path('analytic.webp')}", loading: "lazy", width: "88", height: "88"}
             %source{type: "image/png", srcset: "#{image_path('analytic.png')}", loading: "lazy", width: "88", height: "88"}
             = image_tag("analytic.png", alt: "Реклама в нужное время и в нужном месте", loading: "lazy", width: "88", height: "88")
-        %h4 
+        %h4
           Реклама в нужное время
           %br
           и в нужном месте
@@ -214,8 +210,8 @@
             %source{type: "image/webp", srcset: "#{image_path('integration.webp')}", loading: "lazy", width: "82", height: "80"}
             %source{type: "image/png", srcset: "#{image_path('integration.png')}", loading: "lazy", width: "82", height: "80"}
             = image_tag("integration.png", alt: "Интеграция с CRM и IP телефонией", loading: "lazy", width: "82", height: "80")
-        %h4 
-          Интеграция с CRM и 
+        %h4
+          Интеграция с CRM и
           %br
           IP телефонией
         %p
@@ -226,23 +222,20 @@
             %source{type: "image/webp", srcset: "#{image_path('sales.webp')}", loading: "lazy", width: "79", height: "65"}
             %source{type: "image/png", srcset: "#{image_path('sales.png')}", loading: "lazy", width: "79", height: "65"}
             = image_tag("sales.png", alt: "Мы поднимем ваши продажи на новый уровень", loading: "lazy", width: "79", height: "65")
-        %h4 
+        %h4
           Мы поднимем ваши продажи
           %br
           на новый уровень
         %p
-          Для анализа маркетинговых активностей и текущей ситуации в вашей нише, 
+          Для анализа маркетинговых активностей и текущей ситуации в вашей нише,
           мы применяем методологию, основанную на эконометрическом анализе BIG DATA. Эта методика позволяет существенно повысить эффективность маркетинга и построить математическую модель для эффективного ведения вашего бизнеса в интернете. LTV, ROI.
 .process
-  %h3.block_title.visible-xs.visible-sm Прозрачный процесс
+  %h3.block_title.visible-xs.visible-sm Работать с нами легко
   .container
-    %h3.hidden-xs.hidden-sm  Понятный и прозрачный процесс
-    %hr.hidden-xs.hidden-sm 
-    
-    %h4 Заранее спланированный и прогнозируемый бюджет
-    %h4 Все затраты прозрачны и доступны заказчику
-    %h4 Проводим комплекс необходимых мер для продвижения вашего бизнеса
-    
+    %h3.hidden-xs.hidden-sm  Рабоать с нами легко. Начните сейчас
+    %hr.hidden-xs.hidden-sm
+
+
     .row.features
       .col-md-2.col-md-offset-1.col-sm-6
         .features__image_wrapper
@@ -266,7 +259,7 @@
         %p
           Мы анализируем динамику спроса
           в вашей нише,
-          на основании чего составляем медиаплан. Просчитываем маркетинговый бюджет для рекламной кампании  
+          на основании чего составляем медиаплан. Просчитываем маркетинговый бюджет для рекламной кампании
       .col-md-2.col-sm-6
         .features__image_wrapper
           %picture
@@ -299,10 +292,10 @@
         Начните с консультации
 
 .work_with_us
-  %h3.block_title.visible-xs.visible-sm  Работать с нами легко
+  %h3.block_title.visible-xs.visible-sm  Детальная отчётность
   .container
     %h3.hidden-xs.hidden-sm  Маркетинг, который можно измерить
-    %hr.hidden-xs.hidden-sm 
+    %hr.hidden-xs.hidden-sm
     .row.features
       .col-md-4
         .features__image_wrapper
@@ -317,8 +310,8 @@
             %source{type: "image/webp", srcset: "#{image_path('clock.webp')}", loading: "lazy", width: "118", height: "125"}
             %source{type: "image/png", srcset: "#{image_path('clock.png')}", loading: "lazy", width: "118", height: "125"}
             = image_tag("clock.png", alt: "Прогнозирование и комплексная оценка результата, сроков и стоимости", loading: "lazy", width: "118", height: "125")
-        %h4 
-          Прогнозирование и комплексная оценка результата, сроков 
+        %h4
+          Прогнозирование и комплексная оценка результата, сроков
           %br
           и стоимости
       .col-md-4
@@ -327,7 +320,7 @@
             %source{type: "image/webp", srcset: "#{image_path('in_touch.webp')}", loading: "lazy", width: "131", height: "125"}
             %source{type: "image/png", srcset: "#{image_path('in_touch.png')}", loading: "lazy", width: "131", height: "125"}
             = image_tag("in_touch.png", alt: "Контроль всех процессов в реальном времени, личный менеджер", loading: "lazy", width: "131", height: "125")
-        %h4 
+        %h4
           Контроль всех процессов
           %br
           в реальном времени,
