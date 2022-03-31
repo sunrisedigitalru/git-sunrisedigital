@@ -27,7 +27,7 @@ gem 'ed25519', '>= 1.2', '< 2.0'
 # other
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'jbuilder', '~> 2.7'
-gem 'puma', '~> 4.1'
+gem 'puma', '~> 4.3'
 gem 'turbolinks', '~> 5'
 
 group :development do
